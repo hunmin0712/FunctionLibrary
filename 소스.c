@@ -27,42 +27,5 @@ int main(){
 			}
 		}
 	}
-	if (day % 7 == 0) {
-		printf("            ");
-	}
-	else if (day % 7 == 1) {
-		printf("               ");
-	}
-	else if (day % 7 == 2) {
-		printf("                  ");
-	}
-	else if (day % 7 == 4) {
-		printf("   ");
-	}
-	else if (day % 7 ==5) {
-		printf("      ");
-	}
-	else if (day % 7 == 6) {
-		printf("         ");
-	}
-	if (month == 1 || month == 3 || month == 5 || month == 7 || month == 8 || month == 10 || month == 12) {
-		print_day= 31;
-	}
-	else if (month == 4 || month == 6 || month == 9 || month == 11) {
-		print_day= 30;
-	}
-	else if (month == 2) {
-		print_day= 28;
-		if ((years % 4) == 0 && (years % 100) != 0 || (years % 400) == 0) {
-			print_day++;
-		}
-	}
-	for (int i = 1; i < print_day; i++) {
-		printf("%3d ", i);
-		if (day % 7 == 2) {
-			printf("\n");
-		}
-		day++;
-	}
 	return 0;
 }
