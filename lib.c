@@ -1,5 +1,4 @@
 #include "lib.h"
-#pragma warning(disable:4996)
 void Swap(int* a, int* b) {
 	int tmp = *a;
 	*a = *b;

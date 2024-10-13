@@ -1,6 +1,5 @@
 #include<stdio.h>  
 #include"lib.h"   
-#pragma warning(disable:4996)
 int main(){
 	int month;
 	int years;
